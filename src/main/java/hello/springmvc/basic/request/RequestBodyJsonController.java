@@ -67,7 +67,7 @@ public class RequestBodyJsonController {
         return "ok";
     }
 
-    @ResponseBody
+    @ResponseBody // 3번 응용
     @PostMapping("/request-body-json-v5")
     public HelloData requestBodyJsonV5(@RequestBody HelloData helloData) { // json -> 자바 객체 // 메시지 컨버터가 해줌
         log.info("username={}, age={}", helloData.getUsername(), helloData.getAge());
